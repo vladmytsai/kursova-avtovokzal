@@ -1,0 +1,25 @@
+program Project1;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  Unit2 in 'Unit2.pas' {Reys},
+  Unit3 in 'Unit3.pas' {DobReys},
+  Unit4 in 'Unit4.pas' {Bilet},
+  Unit5 in 'Unit5.pas' {Pass},
+  Unit6 in 'Unit6.pas' {Stat},
+  Unit8 in 'Unit8.pas' {FDM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TReys, Reys);
+  Application.CreateForm(TDobReys, DobReys);
+  Application.CreateForm(TBilet, Bilet);
+  Application.CreateForm(TPass, Pass);
+  Application.CreateForm(TStat, Stat);
+  Application.CreateForm(TFDM, FDM);
+  Application.Run;
+end.
